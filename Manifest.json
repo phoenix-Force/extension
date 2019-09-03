@@ -1,0 +1,23 @@
+{
+    "name":"Kotha",
+    "version":"1.0",
+    "manifest_version":2,
+    "description":"Save Your time :)",
+    "browser_action":{
+        "default_icon":"ico.png",
+        "default_popup":"mypopup.html"
+        
+    },
+    "permissions":["tabs"],
+    "content_scripts": [{
+        "css": ["st.css"],
+        "js": ["content.js"],
+        "matches": [
+            "<all_urls>"
+        ]
+      }],
+      "background":{
+          "scripts":["bck.js"]
+      }
+
+}
